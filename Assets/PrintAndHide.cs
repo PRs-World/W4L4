@@ -9,17 +9,19 @@ public class PrintAndHide : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rend = GetComponent<Renderer>();
+        //rend = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        i++;
         Debug.Log(gameObject.name + ":" + i);   
 
-        if(i > 100)
+        /*if(i > 100)
         {
             rend.enabled = false;
-        }
+        }*/
     }
 }
+    
